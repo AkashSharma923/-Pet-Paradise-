@@ -7,40 +7,49 @@
     <link href="output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="flex flex-col h-[100vh] w-full bg-[#b5e48c]">
-      <div class="flex w-full h-20 items-center justify-between bg-[#b5e48c] px-2 py-5 shadow-green-900 shadow-md z-10">
-        <div class="flex h-fit w-20">
-            <a class="h-20 w-20" href="#">
-          <img
-            class="h-20 w-20 bg-[#b5e48c]"
-            src="logo-removebg-preview.png"
-            alt=""
-          />
-      </a>
+    <div class="flex flex-col h-[100vh] w-full bg-[url('wallper.png')] bg-opacity-0 bg-no-repeat bg-cover backdrop:brightness-0">
+      <div class="flex h-20 items-center justify-between bg-[#2f703bb9] px-2 py-5 shadow-green-900 shadow-2xl ">
+        <div class="flex h-fit  w-full justify-between md:w-28 items-center ">
+          <div class="bg-transparent flex-col justify-center h-auto gap-2 ml-2 flex md:hidden cursor-pointer">
+            <div class="w-9 h-[5px] rounded-md bg-[#092317]  "></div>
+            <div class="w-9 h-[5px] rounded-md bg-[#092317]  "></div>
+            <div class="w-9 h-[5px] rounded-md bg-[#092317]  "></div>
+          </div>
+          <a class="transition-all  sm:h-14 sm:w-14 h-auto w-auto justify-end rounded-full hover:shadow-2xl hover:backdrop-blur-md hover:shadow-green-600" href="#">
+            <img class="transition-all brightness-150 hover:brightness-200 h-14 w-14 bg-transparent hover:bg-[#dcffbd63] rounded-full hover:shadow-2xl hover:shadow-green-700" src="logo-removebg-preview.png" alt="" />
+          </a>
         </div>
-        <div class="flex justify-start py-1 rounded-xl bg-[#69b67b] px-2 mr-96 text-start shadow-green-700 shadow-inner">
-          <ul class="flex gap-11 ">
-            <li class="cursor-pointer text-center text-2xl font-bold text-[#2e6239] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">About</li>
-            <li class="cursor-pointer text-center text-2xl font-bold text-[#386641] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">Features</li>
-            <li class="cursor-pointer text-center text-2xl font-bold text-[#386641] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">Pricing</li>
-            <li class="cursor-pointer text-center text-2xl font-bold text-[#386641] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">Contact</li>
+        <div class=" hidden justify-center py-1 rounded-xl bg-[#69b67b] px-2 lg:mr-72 shadow-green-700 shadow-inner md:flex mr-0">
+          <ul class=" flex gap-0 md:gap-11">
+            <li class="cursor-pointer text-center text-2xl hover:text-[27px] font-bold text-[#2e6239] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">About</li>
+            <li class="cursor-pointer text-center text-2xl hover:text-[27px] font-bold text-[#386641] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">Features</li>
+            <li class="cursor-pointer text-center text-2xl hover:text-[27px] font-bold text-[#386641] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">Pricing</li>
+            <li class="cursor-pointer text-center text-2xl hover:text-[27px] font-bold text-[#386641] py-2 px-4 hover:bg-[#ccf5d5] hover:rounded-2xl transition-all">Contact</li>
           </ul>
         </div>
         <div class="flex gap-4 pr-5 items-center">
-          <button class="bg-[#40916c] h-10 hover:bg-[#5dce9b] text-center text-white font-bold py-2 px-4 border-b-4 border-[#2d6a4f] hover:border-[#52b788] rounded hover:rounded-2xl shadow-green-950 hover:shadow-green-700 shadow-inner hover:text-[#2e6239] transition-all">Log In</button>
-          <button class=" text-[#40916c] font-bold py-2 px-4 border-[#3f8063] text-[22px]  transition-all ">Sign Up</button>
+          <button class="bg-[#40916c] hidden md:flex md:h-10 md:w-auto hover:bg-[#5dce9b] text-center text-[#c4ffb8] font-bold py-2 px-4 border-b-4 border-[#275b44] hover:border-[#52b788] rounded hover:rounded-2xl shadow-green-950 hover:shadow-[#6fc38ef4] shadow-inner hover:text-[#2e6239] transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis box-border">Log In</button>
+          <button class="hidden md:inline-flex btn relative duration-300 items-center justify-start overflow-hidden font-medium transition-all bg-green-200 rounded hover:bg-green-600 group py-1.5 px-2.5">
+            <span class="w-56 h-48 rounded duration-300 bg-green-800 absolute bottom-0 left-0 translate-x-full ease-out transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+            <span class="relative duration-300 w-full text-left text-green-600 transition-colors ease-in-out group-hover:text-[#d4ffc7]">Sign Up</span>
+            </button>
         </div>
       </div>
-      <div class="flex w-full    bg-no-repeat bg-custom-image bg-contain bg-center h-full">
-            <!-- <div class="w-[50%] font-monostic flex flex-col justify-center items-start">
-                  <h2 class="font-Nostalgic text-[#2e6239]">Welcome !</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                  <button class=" shadow-green-700 shadow-inner w-fit p-2 rounded-2xl px-4 bg-[#466c20]  text-2xl font-bold text-[#40916c]">Join Now</button>
+    
+    
+       <div class="flex w-full    bg-no-repeat bg-custom-image bg-contain bg-center h-full"> 
+           <div class="w-[50%] font-monostic flex flex-col justify-center items-start absolute top-1/2 left-1/2 translate-x-[-80%] translate-y-[-50%] gap-4">
+                  <h2 class="text-[#ffffff] lg:text-8xl text-4xl font-playwrite mb-4 md:text-6xl">Welcome !</h2>
+                  <p class="md:ml-4 ml-0 md:text-3xl text-xl text-[#b3efc0] mb-4 font-medium ">Discover the beauty and wonders of the natural world with us. Our mission is to inspire, educate, and connect you with nature.</p>
+                  <button class="md:ml-4 ml-0 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+                    <span class="md:text-3xl text-xl text-green-800 hover:text-green-800 relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-lime-600 rounded-md group-hover:bg-opacity-0">
+                    Join Now !
+                    </span>
+                    </button>
             </div>
-            <div class=" w-[50%]">
-                  <img class="absolute bottom-0-0 w-[100%] h-[100%]" src="iguana-removebg-preview.png" alt="">
-            </div> -->
-      </div>
+            
+      </div> 
     </div>
+  </div>
   </body>
 </html>
